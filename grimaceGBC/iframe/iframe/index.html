@@ -1,0 +1,37 @@
+<style>
+  #container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 0;
+  }
+</style>
+
+<script>
+  function updateScale() {
+    // Calculate the scale multiplier based on the screen resolution
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    var scaleMultiplier = Math.min(screenHeight / 400, screenWidth / 400);
+
+    // Apply the scale multiplier to the iframe
+    var iframe = document.getElementById('yourIframe');
+    iframe.style.transform = 'scale(' + scaleMultiplier + ')';
+  }
+
+  // Update the scale every 100 milliseconds
+  window.onload = function() {
+    updateScale(); // Initial scale update
+
+    setInterval(updateScale, 1); // Update scale every 100ms
+  };
+</script>
+
+<div id="container">
+  <iframe id="yourIframe" src="https://oggames.monkegamer.com/grimaceGBC/iframe/" scrolling="no"></iframe>
+</div>

@@ -1,7 +1,485 @@
-<style>
-  * {
-    margin: 0px;
-    padding: 0px;
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OGGames</title>
+  <meta name="description" content="The #1 Old Generation Gaming Website Without Advertisements">
+  <meta property="og:title" content="OGGames">
+  <meta property="og:description" content="The #1 Old Generation Gaming Website Without Advertisements">
+  <meta property="og:image" content="https://images-platform.99static.com//M27V-1eArQknoYx5Gqr0CB8lH8E=/0x0:1500x1500/fit-in/500x500/99designs-contests-attachments/125/125216/attachment_125216479">
+  <script src="script.js"></script>
+  <link rel="icon" type="image/png" href="https://images-platform.99static.com//M27V-1eArQknoYx5Gqr0CB8lH8E=/0x0:1500x1500/fit-in/500x500/99designs-contests-attachments/125/125216/attachment_125216479">
+<style>/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Apply custom styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#hero {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_j5ZfTis9PYVXVGpLlnR-NIrJ5msFQYHLVA&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+  font-weight: bolder;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff5e3a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.games {
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.game-card {
+    background-color: #ff9f1a;
+    width: 320px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.game-card img {
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.game-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.game-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.play-button {
+    display: inline-block;
+    background-color: #ff5e3a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+}
+  
+  
+  
+        #add-game {
+            background-color: #222;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .add-game-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #add-game h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        #add-game p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+  .mentesticlesaughyes {
+    border-radius: 1000px;
+    height: 40px;
+    font-family: trebuchet MS;
+    width: 300px;
   }
-</style>
-<iframe src="https://monkeyclicker.vercel.app/" style="width: 100%; height: 100%;></iframe>
+  hr {
+    color: white;
+  }
+  </style></head>
+<body><script>function searchGames() {
+  // Get the search input value
+  var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+  // Get all game cards
+  var gameCards = document.getElementsByClassName('game-card');
+
+  // Loop through each game card and hide/show based on the search term
+  for (var i = 0; i < gameCards.length; i++) {
+    var title = gameCards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+    var description = gameCards[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+
+    if (title.includes(searchTerm) || description.includes(searchTerm)) {
+      gameCards[i].style.display = 'block';
+    } else {
+      gameCards[i].style.display = 'none';
+    }
+  }
+}
+  </script>
+    <header>
+        <h1>Welcome to OGGames</h1>
+                <nav>
+            <ul>
+                <li><a href="https://oggames.monkegamer.com">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Experience the Ultimate Gaming Adventure</h2>
+            <p>Explore our collection of exciting games!</p>
+            <a href="#games" class="cta-button">Play Now</a>
+        </div>
+    </section>
+        <section id="add-game">
+        <div class="add-game-content">
+            <h2>Have a game suggestion?</h2>
+            <p>Fill out the form below to submit your game to be added to this website.</p>
+            <a href="https://forms.gle/ipfBXKfVZ8U2MPus8" class="cta-button">Fill out the Form</a>
+        </div>
+    </section>
+    <section class="games">
+        <h2>Games</h2>
+      <input type="text" id="search-input" class="mentesticlesaughyes" placeholder="Search games...">
+
+<script>
+  // Get a reference to the search input field
+  const searchInput = document.getElementById('search-input');
+
+  // Add an event listener to the input field
+  searchInput.addEventListener('input', handleSearch);
+
+  // Function to handle the search input
+  function handleSearch() {
+    // Get the entered search query
+    const query = searchInput.value.toLowerCase();
+
+    // Get all game cards
+    const gameCards = document.querySelectorAll('.game-card');
+
+    // Loop through each game card and check if the title contains the search query
+    gameCards.forEach((card) => {
+      const title = card.querySelector('h3').textContent.toLowerCase();
+      if (title.includes(query)) {
+        card.style.display = 'block'; // Show the game card
+      } else {
+        card.style.display = 'none'; // Hide the game card
+      }
+    });
+  }
+</script>
+
+        <div class="game-container">
+            <div class="game-card">
+                <img src="https://grimacesbirthday.com/card/600x314.png" alt="Grimace's Birthday">
+                                                <h3>Grimace's Birthday GBC</h3>
+              <a href="https://oggames.monkegamer.com/grimaceGBC" class="play-button">Play</a>
+            </div>
+            <div class="game-card">
+                <img src="https://assets2.ignimgs.com/2013/08/27/tetris2jpg-e94051_160w.jpg?width=1280" alt="Game 2">
+                                <h3>Tetris NES</h3>
+              <a href="https://oggames.monkegamer.com/tetrisNES" class="play-button">Play</a>
+            </div>
+            <div class="game-card">
+                <img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_SuperMarioBros.jpg" alt="Game 3">
+                <h3>Super Mario Bros NES</h3>
+                <a href="https://oggames.monkegamer.com/supermariobrosNES" class="play-button">Play</a>
+            </div>
+                      <div class="game-card">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.launchbox-app.com%2F6ffa595a-f615-4aa7-b195-7a6325732600.jpg&amp;f=1&amp;nofb=1&amp;ipt=8adebee165edeae448cb4125c11d0263dde52e11e738e452782edc405155be3b&amp;ipo=images">                <h3>Pokemon Blue GB</h3>
+                <a href="https://oggames.monkegamer.com/pokemonblueGB" class="play-button">Play</a>
+            </div>
+                                <div class="game-card">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.launchbox-app.com%2Fa5b74e3b-d5ea-485c-a068-3a1fca2596fa.jpg&amp;f=1&amp;nofb=1&amp;ipt=c1812383ed864b1b551a0c3adb87e1b9f072a12caf1563391cac9550c5b11e9f&amp;ipo=images">                <h3>Pokemon Red GB</h3>
+                <a href="https://oggames.monkegamer.com/pokemonredGB" class="play-button">Play</a>
+            </div>
+                                          <div class="game-card">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn02.nintendo-europe.com%2Fmedia%2Fimages%2F10_share_images%2Fgames_15%2Fgame_boy_4%2FH2x1_GB_PokemonYellow_enGB_image1600w.jpg&amp;f=1&amp;nofb=1&amp;ipt=caa5a20e7d3d236d9ee9a1fbcf323027c7c52562f7f61d380488d3f787a37f6c&amp;ipo=images">                <h3>Pokemon Yellow GBC</h3>
+                <a href="https://oggames.monkegamer.com/pokemonyellowGBC" class="play-button">Play</a>
+            </div>
+                                                    <div class="game-card">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.consoleroms.com%2Fimg%2Froms%2Fthumbs%2Fpokemon-green-gameboy.jpg&amp;f=1&amp;nofb=1&amp;ipt=a8fd5fc4b11cfd13c705dfd29a36d5a9b36803d474440e65644843330dbffa59&amp;ipo=images">                <h3>Pokemon Green GB</h3>
+                <a href="https://oggames.monkegamer.com/pokemongreenGB" class="play-button">Play</a>
+            </div>
+                                                              <div class="game-card">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.amazonaws.com%2Fretronauts-www%2Fassets%2Feditorial%2F2017%2F09%2Fsuper-nes-mini-countdown-13-smk-box.jpg&amp;f=1&amp;nofb=1&amp;ipt=80e651704bbf76b2567d482b037d2e400dbd3de1d7ce665639c2541ccdf60914&amp;ipo=images">                <h3>Super Mario Kart SNES</h3>
+                <a href="https://oggames.monkegamer.com/supermariokartSNES" class="play-button">Play</a>
+            </div>
+                                                                        <div class="game-card">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Femu-games.com%2Fwp-content%2Fuploads%2F2018%2F07%2Flegend-of-zelda-ocarina-of-time-wallpapers-photo-For-Desktop-Wallpaper.jpg&amp;f=1&amp;nofb=1&amp;ipt=23c90f0e0ecf954e9ae8e4d8c566cb7c85c200e1463a582c576791726870f002&amp;ipo=images">                <h3>The Legend of Zelda: Ocarina of Time N64</h3>
+                <a href="https://oggames.monkegamer.com/zeldaocarinaoftimeN64" class="play-button">Play</a>
+            </div>
+                                                                                  <div class="game-card">
+<img src="https://th.bing.com/th/id/R.1fc0834e6818958a8092363472b9294a?rik=8C4DVb5aGn%2fJjQ&amp;riu=http%3a%2f%2fnintenfan.com%2fwp-content%2fuploads%2f2016%2f10%2fMario-Kart-64-Video-Game-Database-Banner.jpg&amp;ehk=6XlaV2K%2fFBpCz6BTTQXZyxDdHMsff%2b%2blrpdQr3eU%2bTU%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0">                <h3>Super Mario Kart 64 N64</h3>
+                <a href="https://oggames.monkegamer.com/supermariokart64N64" class="play-button">Play</a>
+            </div>
+                                                                                            <div class="game-card">
+<img src="https://files.gamebanana.com/img/banners/games/5aad522a56ec9.jpg">                <h3>Super Mario 64 N64</h3>
+                <a href="https://oggames.monkegamer.com/supermario64N64" class="play-button">Play</a>
+            </div>
+                                                                                                      <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.NNoYAUmswBxA5mYyjS5glAHaEX?pid=ImgDet&amp;rs=1">                <h3>Marble Madness NES</h3>
+                <a href="https://oggames.monkegamer.com/marblemadnessNES" class="play-button">Play</a>
+            </div>
+                                                                                                                <div class="game-card">
+<img src="https://coverproject.sfo2.cdn.digitaloceanspaces.com/nes/nes_qbert_thumb.jpg">                <h3>Q-Bert NES</h3>
+                <a href="https://oggames.monkegamer.com/qbertNES" class="play-button">Play</a>
+            </div>
+                                                                                                      <div class="game-card">
+<img src="https://i.ytimg.com/vi/zfZ3PAKOluY/maxresdefault.jpg">                <h3>Mortal Kombat SG</h3>
+                <a href="https://oggames.monkegamer.com/mortalkombatSG" class="play-button">Play</a>
+            </div>
+                                                                                                      <div class="game-card">
+<img src="https://i.ytimg.com/vi/V9FSCtuZI3g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBN-IGIdONllsbgLNBXdGvBqBiF2A">                <h3>Mortal Kombat II SG</h3>
+                <a href="https://oggames.monkegamer.com/mortalkombat2SG" class="play-button">Play</a>
+            </div>
+                                                                                                                <div class="game-card">
+<img src="https://i.ytimg.com/vi/g-6VZiIEI9c/hqdefault.jpg">                <h3>Mortal Kombat 3 SG</h3>
+                <a href="https://oggames.monkegamer.com/mortalkombat3SG" class="play-button">Play</a>
+            </div>
+                                                                                                                          <div class="game-card">
+<img src="https://i.ibb.co/vjKkDyS/chingchong.webp">                <h3>Mortal Kombat 5 SNES</h3>
+                <a href="https://oggames.monkegamer.com/streetfighter5SNES" class="play-button">Play</a>
+            </div>
+                                                                                                                                    <div class="game-card">
+<img src="https://images.emulatorgames.net/nintendo/street-fighter-3.png">                <h3>Mortal Kombat 3 NES</h3>
+                <a href="https://oggames.monkegamer.com/streetfighter3NES" class="play-button">Play</a>
+            </div>
+                                                                                                                                              <div class="game-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD75rwIT3icaVuQI8ebcqXRxpCDVu1tNwqAg&amp;usqp=CAU">                <h3>Mortal Kombat 2 SMS</h3>
+                <a href="https://oggames.monkegamer.com/streetfighter2SMS" class="play-button">Play</a>
+            </div>
+                                                                                                                                                        <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.4gFq_K4wbJwb0mDjvWic0wHaDt?pid=ImgDet&amp;rs=1">                <h3>Pokemon Gold GBC</h3>
+                <a href="https://oggames.monkegamer.com/pokemongoldGBC" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                  <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.DRs4ztCqOLeyoGPr4ollLQHaDt?pid=ImgDet&amp;rs=1">                <h3>Pokemon Silver GBC</h3>
+                <a href="https://oggames.monkegamer.com/pokemonsilverGBC" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                            <div class="game-card">
+<img src="https://th.bing.com/th/id/R.324e87fd5bf14d6688a4df3dbe04ac6b?rik=7oIooENVGuHlGw&amp;riu=http%3a%2f%2fdigitalcracknetwork.com%2fwp-content%2fuploads%2f2016%2f09%2fmetroid-nes-1620x1200.jpg&amp;ehk=UY4vgJoGiiFOU5KDRk26pKHd7%2bswvwE84byP6hl8juw%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0">                <h3>Metroid NES</h3>
+                <a href="https://oggames.monkegamer.com/metroidNES" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                      <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.tdMhqjAuIChzyVDiST9V_gHaDt?pid=ImgDet&amp;rs=1">                <h3>Super Metroid SNES</h3>
+                <a href="https://oggames.monkegamer.com/supermetroidSNES" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.f2ueLVn9bjnUWC1SMRj9mgHaEK?pid=ImgDet&amp;rs=1">                <h3>Earthbound SNES</h3>
+                <a href="https://oggames.monkegamer.com/earthboundSNES" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                          <div class="game-card">
+<img src="https://i.ytimg.com/vi/FVcTSzoMD_4/maxresdefault.jpg">                <h3>Donkey Kong GB</h3>
+                <a href="https://oggames.monkegamer.com/donkeykongGB" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                    <div class="game-card">
+<img src="https://retrocemetery.com/wp-content/uploads/2016/11/Donkey-Kong-Banner-1.png">                <h3>Donkey Kong NES</h3>
+                <a href="https://oggames.monkegamer.com/donkeykongNES" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                              <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.oflPNCkoHJXhPyshJM8ZMwHaFN?pid=ImgDet&amp;rs=1">                <h3>Donkey Kong 64 N64</h3>
+                <a href="https://oggames.monkegamer.com/donkeykong64N64" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                        <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.q2F2S9JxP6uO0hM8rTk8DgAAAA?pid=ImgDet&amp;rs=1">                <h3>Hoshi no Kirby 64 N64</h3>
+                <a href="https://oggames.monkegamer.com/hoshinokirby64N64" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                  <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.2NJD3NuiF4GAqCF0N0j8mQHaEK?pid=ImgDet&amp;rs=1">                <h3>Kirby 64: The Crystal Shards N64</h3>
+                <a href="https://oggames.monkegamer.com/kirby64crystalshardsN64" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                            <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.9GBGlhedSqD3hRNGsvhJwgHaEn?pid=ImgDet&amp;rs=1">                <h3>Kirby's Adventure NES</h3>
+                <a href="https://oggames.monkegamer.com/kirbyadventureNES" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                      <div class="game-card">
+<img src="https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/game_boy_advance_7/SI_GBA_KirbyAndTheAmazingMirror.jpg">                <h3>Kirby &amp; the Amazing Mirror GBA</h3>
+                <a href="https://oggames.monkegamer.com/kirbyamazingmirrorGBA" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                <div class="game-card">
+<img src="https://3.bp.blogspot.com/-5XirusfC0YI/UK_mb_HV-FI/AAAAAAAAFos/7hzmCLU8TAg/s1600/kirbys-dream-land-2-e1338352933671.jpg">                <h3>Kirby's Dream Land 2 GB</h3>
+                <a href="https://oggames.monkegamer.com/kirbydreamland2GB" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                          <div class="game-card">
+<img src="https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_KirbysDreamland_image1600w.jpg">                <h3>Kirby's Dream Land GB</h3>
+                <a href="https://oggames.monkegamer.com/kirbydreamlandGB" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                    <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.FZVe7U6uMy_6U_o8a8o86wHaEK?pid=ImgDet&amp;rs=1">                <h3>Kirby's Pinball Land GB</h3>
+                <a href="https://oggames.monkegamer.com/kirbypinballGB" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                              <div class="game-card">
+<img src="https://i.ytimg.com/vi/mZwzkjtB12k/maxresdefault.jpg">                <h3>Kirby: Squeak Squad NDS</h3>
+                <a href="https://oggames.monkegamer.com/kirbysqueaksquadNDS" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                        <div class="game-card">
+<img src="https://th.bing.com/th/id/OIP.n31QWNpFE0qPoRI3YdhC7wHaFZ?pid=ImgDet&amp;rs=1">                <h3>Kirby Super Star SNES</h3>
+                <a href="https://oggames.monkegamer.com/kirbysuperstarSNES" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                  <div class="game-card">
+<img src="https://images.gamebanana.com/img/banners/games/596cb41f20d2f.jpg">                <h3>Super Smash Bros. N64</h3>
+                <a href="https://oggames.monkegamer.com/supersmashbrosN64" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                            <div class="game-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw-DNC4COzAZE_KPps6Q0nqMyZSSyNFvy2Tu7z2BEh&s">                <h3>Bubble Bobble NES</h3>
+                <a href="https://oggames.monkegamer.com/bubblebobbleNES" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                      <div class="game-card">
+<img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/game_boy_advance_7/SI_GBA_PokemonRuby_enGB_image1280w.jpg">                <h3>Pokemon Ruby GBA</h3>
+                <a href="https://oggames.monkegamer.com/pokemonrubyGBA" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                <div class="game-card">
+<img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/game_boy_advance_7/SI_GBA_PokemonSapphire_enGB_image1600w.jpg">                <h3>Pokemon Sapphire GBA</h3>
+                <a href="https://oggames.monkegamer.com/pokemonsapphireGBA" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                          <div class="game-card">
+<img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/game_boy_advance_7/H2x1_GBA_PokemonEmerald_enGB_image1600w.jpg">                <h3>Pokemon Emerald GBA</h3>
+                <a href="https://oggames.monkegamer.com/pokemonemeraldGBA" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                                    <div class="game-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMdGOsGMpX-K73lnfh23uXclf1yhNcYuR20A&usqp=CAU">                <h3>Pokemon Fire Red GBA</h3>
+                <a href="https://oggames.monkegamer.com/pokemonfireredGBA" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                                              <div class="game-card">
+<img src="https://assets.altarofgaming.com/wp-content/uploads/2021/12/pokemon-leaf-green-version-game-cover-altar-of-gaming.jpg">                <h3>Pokemon Leaf Green GBA</h3>
+                <a href="https://oggames.monkegamer.com/pokemonleafgreenGBA" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                        <div class="game-card">
+<img src="https://pokuniverse.com/wp-content/uploads/2021/06/Pokemon-Platinum-Video-Game-Guide.png">                <h3>Pokemon Platinum NDS</h3>
+                <a href="https://oggames.monkegamer.com/pokemonplatinumNDS" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                  <div class="game-card">
+<img src="data:image/jpeg;base64,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">                <h3>Pokemon Crystal GBC</h3>
+                <a href="https://oggames.monkegamer.com/pokemoncrystalGBC" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="game-card">
+<img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_wii_u_7/SI_WiiUVC_StarFox64.jpg">                <h3>Star Fox 64 N64</h3>
+                <a href="https://oggames.monkegamer.com/starfox64N64" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                      <div class="game-card">
+<img src="https://upload.wikimedia.org/wikipedia/en/1/1a/Jet_Force_Gemini_box.jpg">                <h3>Jet Force Gemini N64</h3>
+                <a href="https://oggames.monkegamer.com/jetforcegeminiN64" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="game-card">
+<img src="https://upload.wikimedia.org/wikipedia/en/3/32/Super_Mario_World_Coverart.png">                <h3>Super Mario World SNES</h3>
+                <a href="https://oggames.monkegamer.com/supermarioworldSNES" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          <div class="game-card">
+<img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/game_boy_advance_7/SI_GBA_TheLegendOfZeldaTheMinishCap_image1600w.jpg">                <h3>The Legend of Zelda: The Minish Cap GBA</h3>
+                <a href="https://oggames.monkegamer.com/zeldaminishcapGBA" class="play-button">Play</a>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="game-card">
+<img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_wii_u_7/SI_WiiUVC_CastlevaniaAriaOfSorrow_image1600w.jpg">                <h3>Castlevania: Aria of Sorrow GBA</h3>
+                <a href="https://oggames.monkegamer.com/castlevaniaariaofsorrowGBA" class="play-button">Play</a>
+            </div>
+        </div>
+      <div id="games"></div>
+    </section>
+    <footer>
+        <p>© 2023 OGGames. All rights reserved.</p>
+    </footer>
+      <script>
+        // Smooth scroll function
+        function smoothScroll(target) {
+            const element = document.querySelector(target);
+            window.scrollTo({
+                top: element.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+
+        // Add event listener to the play button
+        const playButton = document.querySelector('.cta-button');
+        playButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            smoothScroll('#games');
+        });
+    </script>
+
+
+</body></html>
