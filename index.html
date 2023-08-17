@@ -175,6 +175,37 @@ footer p {
     font-family: trebuchet MS;
     width: 300px;
   }
+
+      /* Announcement bar styles */
+    .announcement-bar {
+      position: fixed;
+      top: 50%;
+      right: -300px; /* Start position, off the screen */
+      transform: translateY(-50%) rotate(-90deg);
+      background-color: rgba(255, 94, 58, 0.8);
+      color: #fff;
+      padding: 10px;;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      transition: right 0.3s ease-in-out;
+      cursor: pointer;
+      font-size: 14px;
+      z-index: 1000;
+      
+    }
+
+    .announcement-bar.active {
+      right: -260px; /* Move to visible position */
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      color: lime;
+      font-weight: bolder;
+      font-size: 19px;
+    }
   hr {
     color: white;
   }
@@ -480,6 +511,26 @@ footer p {
             smoothScroll('#games');
         });
     </script>
+  <div class="announcement-bar" id="announcementBar">
+    <span class="close-button" onclick="closeAnnouncement()">X</span>
+    <p class="qwejq">There's an important announcement! <a href="/announcement">Click here</a> to learn more.</p>
+  </div>
 
+  <script>
+    // Function to open the announcement bar
+    function openAnnouncement() {
+      const announcementBar = document.getElementById('announcementBar');
+      announcementBar.classList.add('active');
+    }
+
+    // Function to close the announcement bar
+    function closeAnnouncement() {
+      const announcementBar = document.getElementById('announcementBar');
+      announcementBar.classList.remove('active');
+    }
+    
+    // Automatically open the announcement bar
+    openAnnouncement();
+  </script>
 
 </body></html>
